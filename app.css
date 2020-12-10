@@ -1,0 +1,1249 @@
+@font-face {
+  font-family: "AktivGrotesk-r";
+  src: url("./fonts/AktivGroteskCorp-Regular.woff2") format("woff2"),
+    url("./fonts/AktivGroteskCorp-Regular.woff") format("woff"),
+    url("./fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AktivGrotesk-b";
+  src: url("./fonts/AktivGroteskCorp-Bold.woff2") format("woff2"),
+    url("./fonts/AktivGroteskCorp-Bold.woff") format("woff"),
+    url("./fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AktivGrotesk-m";
+  src: url("./fonts/AktivGroteskCorp-Medium.woff2") format("woff2"),
+    url("./fonts/AktivGroteskCorp-Medium.woff") format("woff"),
+    url("./fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AktivGrotesk-l";
+  src: url("./fonts/AktivGroteskCorp-Light.woff2") format("woff2"),
+    url("./fonts/AktivGroteskCorp-Light.woff") format("woff"),
+    url("./fonts/AktivGroteskCorp-Light.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
+
+.navigation {
+  height: 70px;
+  background-color: rgba(17, 24, 31, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  z-index: 999;
+}
+.navlogo {
+  display: flex;
+  font-family: sans-serif;
+  align-items: center;
+  gap: 10px;
+}
+.navlogo p {
+  font-size: 12px;
+}
+.navlogo a {
+  text-decoration: none;
+  color: #fff;
+}
+.navright-side {
+  display: flex;
+  width: 140px;
+}
+.tel {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+}
+.menu {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.burger {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.navlinks {
+  display: none;
+}
+
+/* contact us */
+.contact-us-popout {
+  width: 280px;
+  background: #11181f;
+  position: absolute;
+  top: 0;
+  right: -250px;
+  flex-direction: column;
+  padding: 20px;
+  display: none;
+  z-index: 999;
+}
+
+.contact-us-closeBtn {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.contact-us-closeBtn span {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #e1e1e1;
+}
+
+.contact-us-closeBtn span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.contact-us-closeBtn span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.australia-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.australia-title,
+.newzealand-title {
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100px;
+  font-size: 14px;
+}
+
+.australia-title span,
+.newzealand-title span {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #da291c 1.29%,
+    #ff7f32 34.57%,
+    #002b94 83.03%,
+    rgba(17, 24, 31, 0) 99.49%
+  );
+}
+.australia-add {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #e1e1e1;
+  font-family: sans-serif;
+  padding: 10px 0;
+}
+
+.australia-add p {
+  font-size: 20px;
+}
+
+.australia-add-content p {
+  font-size: 14px;
+  color: gray;
+  padding: 2px 0;
+}
+
+.australia-add-content p:nth-child(1) {
+  color: #e1e1e1;
+}
+
+.contact-us-btn-link {
+  align-self: center;
+  padding: 40px 0;
+}
+.contact-us-btn-link button {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #e1e1e1;
+  background: transparent;
+}
+.contact-us-btn-link button a {
+  color: #e1e1e1;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* MENU */
+.menu-popout {
+  width: 280px;
+  position: absolute;
+  background: #11181f;
+  top: 0;
+  right: -250px;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: none;
+  z-index: 999;
+}
+
+.menu-closeBtn {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+  align-self: flex-end;
+  cursor: pointer;
+  border-left: 1px solid #e1e1e1;
+}
+
+.menu-closeBtn span {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #e1e1e1;
+}
+
+.menu-closeBtn span:nth-child(1) {
+  transform: rotate(45deg);
+}
+.menu-closeBtn span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.menu-mobile-links {
+  border-top: 1px solid #e1e1e1;
+  color: #fff;
+  list-style: none;
+}
+.menu-mobile-links li {
+  border-bottom: 1px solid #e1e1e1;
+  height: 60px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 15px;
+  color: #e1e1e1;
+}
+.menu-mobile-links li a {
+  color: #e1e1e1;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.application-mobile-links,
+.products-mobile-links,
+.about-mobile-links {
+  max-height: 60px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.application-mobile-links li {
+  transition: all 0.4s ease;
+}
+.application-mobile-links li:nth-child(2) {
+  border-left: 5px solid #ffc600;
+}
+.application-mobile-links li:nth-child(3) {
+  border-left: 5px solid#00CFB4;
+}
+.application-mobile-links li:nth-child(4) {
+  border-left: 5px solid#298FC2;
+}
+.application-mobile-links li:nth-child(5) {
+  border-left: 5px solid #004677;
+}
+.application-mobile-links li:nth-child(6) {
+  border-left: 5px solid #4a25aa;
+}
+.application-mobile-links li:nth-child(7) {
+  border-left: 5px solid#4A25AA;
+}
+.application-mobile-links li:nth-child(8) {
+  border-left: 5px solid #4a25aa;
+}
+
+.application-mobile-links li:nth-child(2):hover {
+  border-left: 20px solid #ffc600;
+}
+.application-mobile-links li:nth-child(3):hover {
+  border-left: 20px solid #00cfb4;
+}
+.application-mobile-links li:nth-child(4):hover {
+  border-left: 20px solid #298fc2;
+}
+.application-mobile-links li:nth-child(5):hover {
+  border-left: 20px solid #004677;
+}
+.application-mobile-links li:nth-child(6):hover {
+  border-left: 20px solid #4a25aa;
+}
+.application-mobile-links li:nth-child(7):hover {
+  border-left: 20px solid#4A25AA;
+}
+.application-mobile-links li:nth-child(8):hover {
+  border-left: 20px solid #4a25aa;
+}
+
+.products-mobile-links li,
+.about-mobile-links li {
+  border-left: 5px solid #969696;
+  transition: all 0.4s ease;
+}
+.products-mobile-links li:hover,
+.about-mobile-links li:hover {
+  border-left: 20px solid #969696;
+}
+.about-mobile-links li:nth-child(1),
+.products-mobile-links li:nth-child(1) {
+  border-left: none;
+}
+
+.applicationHideDropdown {
+  max-height: 480px;
+}
+.dropdownsBorderLi {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.productsHideDropdown {
+  max-height: 180px;
+}
+
+.aboutHideDropdown {
+  max-height: 420px;
+}
+.desktop-navlinks {
+  display: none;
+}
+.contactPopOutClassMobile {
+  transform: translateX(0) !important;
+}
+
+@media (min-width: 1200px) {
+  .menu-popout,
+  .navright-side {
+    display: none !important;
+  }
+  .navlinks {
+    display: block;
+  }
+  .navigation {
+    transform: translateX(0) !important;
+    pointer-events: all !important;
+    height: 120px;
+    padding-left: 3%;
+  }
+  .navigationDeskClass {
+    transform: translateX(-500px) !important;
+  }
+  .contactPopOutClass {
+    display: flex !important;
+    right: 0 !important;
+  }
+  .navlogo {
+    gap: 20px;
+    width: 20%;
+  }
+  .navlogo img {
+    width: 60px;
+  }
+  .navlogo p {
+    font-size: 15px;
+  }
+  .desktop-navlinks {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    height: 120px;
+    align-items: center;
+    max-width: 1200px;
+  }
+  .desktop-navlinks li {
+    position: relative;
+    list-style: none;
+    height: 120px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .desktop-navlinks li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .desktop-nav-contact-us {
+    color: #fff;
+    font-family: sans-serif;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px 0 40px;
+    cursor: pointer;
+    border-left: 1px solid #e1e1e1;
+  }
+  .desktop-application-dropdown-links {
+    display: none;
+  }
+  .desktop-application-dropdown-links li,
+  .desktop-about-dropdown-links li,
+  .desktop-products-dropdown-links li {
+    height: 60px;
+    width: 250px;
+    justify-content: flex-start;
+    padding: 0 5%;
+    border-bottom: 1px solid #e1e1e1;
+    transition: all 0.4s ease;
+  }
+  .desktop-application-dropdown-links li:nth-child(1) {
+    border-left: 5px solid #ffc600;
+  }
+  .desktop-application-dropdown-links li:nth-child(1):hover {
+    border-left: 20px solid #ffc600;
+  }
+  .desktop-application-dropdown-links li:nth-child(2) {
+    border-left: 5px solid #00cfb4;
+  }
+  .desktop-application-dropdown-links li:nth-child(2):hover {
+    border-left: 20px solid #00cfb4;
+  }
+  .desktop-application-dropdown-links li:nth-child(3) {
+    border-left: 5px solid #298fc2;
+  }
+  .desktop-application-dropdown-links li:nth-child(3):hover {
+    border-left: 20px solid #298fc2;
+  }
+  .desktop-application-dropdown-links li:nth-child(4) {
+    border-left: 5px solid #004677;
+  }
+  .desktop-application-dropdown-links li:nth-child(4):hover {
+    border-left: 20px solid #4a25aa;
+  }
+  .desktop-application-dropdown-links li:nth-child(5) {
+    border-left: 5px solid #4a25aa;
+  }
+  .desktop-application-dropdown-links li:nth-child(5):hover {
+    border-left: 20px solid #4a25aa;
+  }
+  .desktop-application-dropdown-links li:nth-child(6) {
+    border-left: 5px solid #4a25aa;
+  }
+  .desktop-application-dropdown-links li:nth-child(6):hover {
+    border-left: 20px solid #4a25aa;
+  }
+  .desktop-application-dropdown-links li:nth-child(7) {
+    border-left: 5px solid #4a25aa;
+  }
+  .desktop-application-dropdown-links li:nth-child(7):hover {
+    border-left: 20px solid #4a25aa;
+  }
+  .desktop-about-dropdown-links li,
+  .desktop-products-dropdown-links li {
+    border-left: 5px solid #969696;
+  }
+
+  .desktop-about-dropdown-links li:hover,
+  .desktop-products-dropdown-links li:hover {
+    border-left: 20px solid #969696;
+  }
+  .desktop-application-hover:hover .desktop-application-dropdown-links {
+    position: absolute;
+    display: block;
+    bottom: -420px;
+    left: -50px;
+    background: #11181f;
+  }
+  .desktop-products-dropdown-links {
+    display: none;
+  }
+  .desktop-products-hover:hover .desktop-products-dropdown-links {
+    position: absolute;
+    display: block;
+    bottom: -120px;
+    left: -50px;
+
+    background: #11181f;
+  }
+  .desktop-about-dropdown-links {
+    display: none;
+  }
+  .desktop-about-hover:hover .desktop-about-dropdown-links {
+    position: absolute;
+    display: block;
+    bottom: -360px;
+    left: -50px;
+    background: #11181f;
+  }
+  .desktop-link-arrowDown {
+    padding-left: 20px;
+  }
+  .contact-us-popout {
+    width: 500px;
+    background: #11181f;
+    position: absolute;
+    top: 0;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 999;
+  }
+  .australia-contact,
+  .newzealand-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e"
+      "f g";
+    gap: 10px;
+    padding: 10px;
+  }
+  .newzealand-contact {
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d e";
+  }
+  .australia-title {
+    grid-area: a;
+  }
+  .newzealand-title {
+    grid-area: a;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
+
+.first-showcase {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 2000px;
+  margin: auto;
+}
+.firstC-swiper-wrapper {
+  min-height: 700px;
+  width: 100%;
+}
+.first-showcase-title {
+  background: #11181f;
+  color: #e1e1e1;
+  font-family: "AktivGrotesk-r", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  width: 100%;
+  height: 300px;
+}
+.first-showcase-title p {
+  max-width: 500px;
+  margin: auto;
+  font-size: 15px;
+}
+
+.firstC-swiper-slide {
+  width: 280px;
+}
+.firstC-swiper-slide-content {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.firstC-swiper-slide-content h3 {
+  color: #11181f;
+  font-family: "AktivGrotesk-r", sans-serif;
+}
+.firstC-swiper-slide-content p {
+  color: #585757;
+  font-family: "AktivGrotesk-r", sans-serif;
+  font-size: 14px;
+  max-width: 280px;
+}
+.firstC-swiper-slide img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+.firstC-view-app {
+  display: none;
+}
+.firstC-view-all-application {
+  height: 100px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.firstC-view-all-application button {
+  width: 200px;
+  height: 50px;
+  background: #11181f;
+  border: none;
+}
+.firstC-view-all-application button a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+
+@media (min-width: 700px) {
+  .firstC-swiper-wrapper {
+    min-height: 900px;
+  }
+
+  .first-showcase-title p {
+    max-width: 600px;
+    font-size: 24px;
+  }
+  .firstC-swiper-slide-content {
+    gap: 20px;
+  }
+  .firstC-swiper-slide-content p {
+    max-width: 400px;
+  }
+  .firstC-swiper-slide img {
+    height: 600px;
+  }
+  .firstC-view-app {
+    display: block;
+    width: 200px;
+    align-items: center;
+    display: flex;
+  }
+
+  .firstC-view-app a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    width: 50%;
+    transition: all 0.2s ease;
+  }
+  .firstC-view-app:hover .arrowLink {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .first-showcase {
+    min-height: 1200px;
+  }
+  .firstC-swiper-wrapper {
+    min-height: 1200px;
+    width: 100%;
+  }
+
+  .firstC-swiper-slide-content {
+    gap: 30px;
+  }
+  .firstC-swiper-slide-content h3 {
+    font-size: 28px;
+  }
+  .firstC-swiper-slide-content p {
+    max-width: 500px;
+  }
+  .firstC-swiper-slide img {
+    height: 850px;
+  }
+
+  .firstC-view-app {
+    display: block;
+    width: 300px;
+    align-items: center;
+    display: flex;
+  }
+  .firstC-view-app a {
+    font-size: 16px;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */ /* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+
+.third-showcase {
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+  margin-top: 100px;
+}
+.third-showcase-title {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 0 5px;
+}
+.thirdC-swiper-slide {
+  width: 280px;
+}
+.thirdC-swiper-slide img {
+  width: 100%;
+  max-width: 700px;
+}
+.thirdC-swiper-slide-content {
+  font-family: "AktivGrotesk-r", sans-serif;
+  padding: 10px 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.thirdC-swiper-slide-content h1 {
+  font-size: 20px;
+}
+.thirdC-swiper-slide-content p {
+  font-size: 12px;
+  max-width: 300px;
+  color: #585757;
+}
+.thirdC-swiper-slide-content span {
+  font-size: 13px;
+  font-family: "AktivGrotesk-r", sans-serif;
+  font-weight: bold;
+}
+.thirdC-swiper-wrapper {
+  min-height: 500px;
+  padding-left: 10px;
+}
+
+.view-all-insights-events {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-all-insights-events button {
+  width: 250px;
+  height: 40px;
+  background: #11181f;
+  border: none;
+}
+
+.view-all-insights-events button a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "AktivGrotesk-r", sans-serif;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .thirdC-swiper-wrapper {
+    min-height: 600px;
+  }
+}
+@media (min-width: 800px) {
+  .thirdC-swiper-wrapper {
+    min-height: 600px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .thirdC-swiper-container {
+    max-width: 800px;
+  }
+  .thirdC-swiper-wrapper {
+    min-height: 500px;
+    padding: 0;
+  }
+  .third-showcase {
+    max-width: 1150px;
+    margin: auto;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    color: #000;
+    z-index: 100;
+    outline: none;
+  }
+  .swiper-button-prev {
+    left: 40px;
+  }
+  .swiper-button-next {
+    right: 40px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .thirdC-swiper-container {
+    max-width: 1150px;
+  }
+  .thirdC-swiper-wrapper {
+    min-height: 600px;
+    padding: 0;
+  }
+  .third-showcase {
+    max-width: 1150px;
+    margin: auto;
+  }
+  .swiper-button-prev {
+    left: -80px;
+  }
+  .swiper-button-next {
+    right: -80px;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
+
+.second-showcase {
+  min-height: 600px;
+  width: 100%;
+  margin-top: 100px;
+}
+.secondC-swiper-slide {
+  width: 280px;
+}
+.secondC-swiper-wrapper {
+  min-height: 600px;
+}
+
+.secondC-swiper-slide img {
+  width: 100vw;
+}
+.secondC-swiper-slide-content {
+  display: flex;
+  padding: 20px 10px 10px 5%;
+  flex-direction: column;
+  gap: 10px;
+  font-family: sans-serif;
+}
+.secondC-swiper-slide-content-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.secondC-swiper-slide-content-title h4 {
+  font-size: 24px;
+}
+.secondC-swiper-slide-content button {
+  background: transparent;
+  border: 1px solid #000;
+  width: 100px;
+  height: 40px;
+}
+.secondC-swiper-slide-content button a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+}
+.secondC-swiper-slide-content p {
+  font-size: 15px;
+  color: #585757;
+  max-width: 400px;
+}
+.secondC-view-all-featured-products {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondC-view-all-featured-products button {
+  background: #11181f;
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+.secondC-view-all-featured-products button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.secondC-swiper-pagination-bullet {
+  background: #000;
+}
+@media (min-width: 450px) {
+  .secondC-swiper-wrapper {
+    min-height: 700px;
+  }
+}
+@media (min-width: 600px) {
+  .second-showcase {
+    min-height: 800px;
+    width: 100%;
+  }
+
+  .secondC-swiper-wrapper {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 750px) {
+  .second-showcase {
+    min-height: 500px;
+    width: 100%;
+  }
+  .secondC-swiper-wrapper {
+    min-height: 700px;
+  }
+  .secondC-swiper-slide {
+    width: 100%;
+    height: 600px;
+    background-image: url("./images/image 2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .secondC-swiper-slide img {
+    display: none;
+  }
+  .secondC-swiper-slide-content {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .second-showcase {
+    min-height: 900px;
+  }
+  .secondC-swiper-wrapper {
+    min-height: 900px;
+  }
+  .secondC-swiper-slide {
+    height: 800px;
+  }
+  .secondC-swiper-slide-content-title h6 {
+    font-size: 16px;
+  }
+  .secondC-swiper-slide-content-title h4 {
+    font-size: 28px;
+  }
+  .secondC-swiper-slide-content p {
+    font-size: 16px;
+  }
+  .secondC-swiper-slide-content {
+    gap: 20px;
+  }
+  .secondC-swiper-slide-content button {
+    width: 130px;
+    height: 50px;
+  }
+  .secondC-swiper-slide-content button a {
+    font-size: 11px;
+  }
+}
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
+.aboutPage-slider {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+}
+.aboutPage-slider-title {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "AktivGrotesk-b", sans-serif;
+  padding: 0 5px;
+  font-weight: bold;
+}
+.aboutPage-slider-swiper-slide {
+  width: 280px;
+}
+.aboutPage-slider-swiper-slide img {
+  width: 100%;
+  max-width: 300px;
+}
+.aboutPage-slider-swiper-slide-content {
+  font-family: sans-serif;
+  padding: 10px 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "AktivGrotesk-r", sans-serif;
+}
+.aboutPage-slider-swiper-slide-content h1 {
+  font-size: 20px;
+}
+.aboutPage-slider-swiper-slide-content p {
+  font-size: 12px;
+  max-width: 300px;
+  color: #585757;
+}
+
+.aboutPage-slider-swiper-wrapper {
+  min-height: 500px;
+  padding-left: 10px;
+}
+
+.aboutPage-viewAll-products {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutPage-viewAll-products button {
+  width: 250px;
+  height: 40px;
+  background: #11181f;
+  border: none;
+}
+
+.aboutPage-viewAll-products button a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "AktivGrotesk-r", sans-serif;
+  font-size: 12px;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+.aboutPage-slider-swiper-button-prev,
+.aboutPage-slider-swiper-button-next {
+  display: none;
+}
+@media (min-width: 400px) {
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+  }
+}
+@media (min-width: 576px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 450px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+    padding: 0;
+  }
+  .aboutPage-slider {
+    max-width: 900px;
+    margin: auto;
+  }
+  .aboutPage-slider-swiper-button-prev,
+  .aboutPage-slider-swiper-button-next {
+    display: flex;
+    color: #000;
+    z-index: 100;
+    outline: none;
+  }
+  .aboutPage-slider-swiper-button-prev {
+    left: 10px;
+  }
+  .aboutPage-slider-swiper-button-next {
+    right: 10px;
+  }
+}
+@media (min-width: 700px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 600px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 520px;
+    padding: 0;
+  }
+  .aboutPage-slider {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 890px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+  }
+  .aboutPage-slider-swiper-button-prev {
+    left: -40px;
+  }
+  .aboutPage-slider-swiper-button-next {
+    right: -40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutPage-slider-swiper-container {
+    max-width: 1090px;
+  }
+  .aboutPage-slider-swiper-wrapper {
+    min-height: 500px;
+    padding: 0;
+  }
+  .aboutPage-slider {
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+@media (min-width: 1300px) {
+  .aboutPage-slider-swiper-button-prev {
+    left: -70px;
+  }
+  .aboutPage-slider-swiper-button-next {
+    right: -70px;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE 3 COLUMNS !!!!!!!!!!!!!!!!!! */
+
+.container-fluid {
+  overflow: hidden;
+  max-width: 2000px;
+  margin: auto;
+  margin-top: 100px;
+}
+.about-application img {
+  width: 100%;
+}
+.about-application-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 40px 10px 40px 10px;
+  font-family: "AktivGrotesk-r", sans-serif;
+}
+.about-application-content h3 {
+  font-family: "AktivGrotesk-b", sans-serif;
+  font-size: 20px;
+}
+.about-application-content p {
+  color: #585757;
+  font-size: 15px;
+}
+
+.seeApplication {
+  width: 300px;
+  display: flex;
+}
+.seeApplication:hover a:nth-child(2) {
+  padding-left: 10px;
+}
+.lastseeApplication {
+  width: 400px;
+}
+.seeApplication a {
+  width: 50%;
+  text-decoration: none;
+  color: #11181f;
+  font-weight: 700;
+  font-family: "AktivGrotesk-r", sans-serif;
+  transition: all 0.2s ease;
+}
+
+@media (min-width: 576px) {
+  .about-application-content {
+    margin: auto;
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .about-application-content {
+    margin: 0;
+  }
+  .about-application-content h3 {
+    padding-left: 10px;
+  }
+  .about-application-content p {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+}
