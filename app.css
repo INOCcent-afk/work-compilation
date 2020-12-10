@@ -1,32 +1,100 @@
 @font-face {
-  font-family: "AktivGrotesk-r";
-  src: url("./fonts/AktivGroteskCorp-Regular.woff2") format("woff2"),
-    url("./fonts/AktivGroteskCorp-Regular.woff") format("woff"),
-    url("./fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+  font-family: "AktivGrotesk-m";
+  src: url("fonts/AktivGroteskCorp-Medium.eot");
+  src: local("fonts/AktivGroteskCorp-Medium"),
+    url("fonts/AktivGroteskCorp-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-Medium.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-Medium.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "AktivGrotesk-b";
-  src: url("./fonts/AktivGroteskCorp-Bold.woff2") format("woff2"),
-    url("./fonts/AktivGroteskCorp-Bold.woff") format("woff"),
-    url("./fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
+  src: url("fonts/AktivGroteskCorp-Bold.eot");
+  src: local("fonts/AktivGroteskCorp-Bold"),
+    url("fonts/AktivGroteskCorp-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-Bold.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-Bold.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-Bold.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "AktivGrotesk-m";
-  src: url("./fonts/AktivGroteskCorp-Medium.woff2") format("woff2"),
-    url("./fonts/AktivGroteskCorp-Medium.woff") format("woff"),
-    url("./fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
+  font-family: "AktivGrotesk-italic";
+  src: url("fonts/AktivGroteskCorp-Italic.eot");
+  src: local("fonts/AktivGroteskCorp-Italic"),
+    url("fonts/AktivGroteskCorp-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-Italic.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-Italic.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-Italic.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "AktivGrotesk-light-italic";
+  src: url("fonts/AktivGroteskCorp-LightItalic.eot");
+  src: local("fonts/AktivGroteskCorp-LightItalic"),
+    url("fonts/AktivGroteskCorp-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-LightItalic.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-LightItalic.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AktivGrotesk-medium-italic";
+  src: url("fonts/AktivGroteskCorp-MediumItalic.eot");
+  src: local("fonts/AktivGroteskCorp-MediumItalic"),
+    url("fonts/AktivGroteskCorp-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-MediumItalic.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-MediumItalic.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-MediumItalic.ttf") format("truetype");
+}
+
 @font-face {
   font-family: "AktivGrotesk-l";
-  src: url("./fonts/AktivGroteskCorp-Light.woff2") format("woff2"),
-    url("./fonts/AktivGroteskCorp-Light.woff") format("woff"),
-    url("./fonts/AktivGroteskCorp-Light.ttf") format("truetype");
+  src: url("fonts/AktivGroteskCorp-Light.eot");
+  src: local("fonts/AktivGroteskCorp-Light"),
+    url("fonts/AktivGroteskCorp-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-Light.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-Light.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AktivGrotesk-r";
+  src: url("fonts/AktivGroteskCorp-Regular.eot");
+  src: local("fonts/AktivGroteskCorp-Regular"),
+    url("fonts/AktivGroteskCorp-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-Regular.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-Regular.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AktivGrotesk-bold-italic";
+  src: url("fonts/AktivGroteskCorp-BoldItalic.eot");
+  src: local("fonts/AktivGroteskCorp-BoldItalic"),
+    url("fonts/AktivGroteskCorp-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/AktivGroteskCorp-BoldItalic.woff2") format("woff2"),
+    url("fonts/AktivGroteskCorp-BoldItalic.woff") format("woff"),
+    url("fonts/AktivGroteskCorp-BoldItalic.ttf") format("truetype");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: AktivGrotesk-r, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!  CSS FOR NAVBAR!!!!!!!!!!!!!!! */
@@ -54,13 +122,16 @@
 }
 .navlogo {
   display: flex;
-  font-family: sans-serif;
+  font-family: AktivGrotesk-r, sans-serif !important;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
-.navlogo p {
-  font-size: 12px;
+
+.vector-letters {
+  height: 10px;
+  color: #fff;
 }
+
 .navlogo a {
   text-decoration: none;
   color: #fff;
@@ -77,6 +148,7 @@
   align-items: center;
   justify-content: center;
   width: 70px;
+  cursor: pointer;
 }
 .menu {
   width: 70px;
@@ -111,6 +183,7 @@
   padding: 40px 20px 20px 20px;
   display: none;
   z-index: 999;
+  max-height: 100vh;
   max-height: 100vh;
   overflow-y: scroll;
 }
@@ -149,13 +222,17 @@
 .australia-title,
 .newzealand-title {
   color: #fff;
-  font-family: sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
   height: 100px;
-  font-size: 14px;
+}
+.australia-title h1,
+.newzealand-title h1 {
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 700 !important;
+  font-size: 24px;
 }
 
 .australia-title span,
@@ -181,12 +258,14 @@
 
 .australia-add p {
   font-size: 20px;
+  margin-bottom: 0;
 }
 
 .australia-add-content p {
   font-size: 14px;
   color: gray;
   padding: 2px 0;
+  margin-bottom: 0;
 }
 
 .australia-add-content p:nth-child(1) {
@@ -196,9 +275,13 @@
 .contact-us-btn-link {
   align-self: center;
   padding: 40px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contact-us-btn-link button {
-  width: 200px;
+  width: 100%;
   height: 40px;
   border: 1px solid #e1e1e1;
   background: transparent;
@@ -206,7 +289,8 @@
 .contact-us-btn-link button a {
   color: #e1e1e1;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 11px;
+  font-family: AktivGrotesk-r, sans-serif;
 }
 
 /* MENU */
@@ -219,9 +303,9 @@
   display: none;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   display: none;
   z-index: 999;
+  min-height: 100vh;
   max-height: 100vh;
   overflow-y: scroll;
 }
@@ -259,7 +343,7 @@
 .menu-mobile-links li {
   border-bottom: 1px solid #e1e1e1;
   height: 60px;
-  font-family: sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
   display: flex;
   align-items: center;
   padding-left: 5%;
@@ -387,8 +471,13 @@
     gap: 20px;
     width: 20%;
   }
-  .navlogo img {
+
+  .navlogoImg {
     width: 60px;
+  }
+  .vector-letters {
+    height: unset;
+    color: #fff;
   }
   .navlogo p {
     font-size: 15px;
@@ -409,16 +498,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: AktivGrotesk-r, sans-serif;
+    font-weight: 500;
     cursor: pointer;
   }
   .desktop-navlinks li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 500;
   }
   .desktop-nav-contact-us {
     color: #fff;
-    font-family: sans-serif;
+    font-family: AktivGrotesk-r, sans-serif;
+    font-weight: 500;
     height: 120px;
     display: flex;
     align-items: center;
@@ -556,6 +648,15 @@
   .newzealand-title {
     grid-area: a;
   }
+  .australia-title h1,
+  .newzealand-title h1 {
+    font-family: AktivGrotesk-r, sans-serif;
+    font-weight: 700 !important;
+    font-size: 28px;
+  }
+  .contact-us-btn-link button {
+    width: 80%;
+  }
 }
 
 /* !!!!!!!!!!!!!!!!!! CSS FOR FIRST SLIDER !!!!!!!!!!!!!!!!!! */
@@ -583,7 +684,7 @@
 .first-showcase-title {
   background: #11181f;
   color: #e1e1e1;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
@@ -595,7 +696,8 @@
 .first-showcase-title p {
   max-width: 500px;
   margin: auto;
-  font-size: 15px;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 .firstC-swiper-slide {
@@ -610,12 +712,14 @@
 }
 .firstC-swiper-slide-content h3 {
   color: #11181f;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 700;
 }
 .firstC-swiper-slide-content p {
   color: #585757;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
   font-size: 14px;
+  font-weight: 400;
   max-width: 280px;
 }
 .firstC-swiper-slide img {
@@ -646,6 +750,8 @@
 .firstC-view-all-application button a {
   text-decoration: none;
   color: #e1e1e1;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 500;
 }
 
 @media (min-width: 700px) {
@@ -715,7 +821,9 @@
     display: flex;
   }
   .firstC-view-app a {
-    font-size: 16px;
+    font-size: 15px;
+    font-family: AktivGrotesk-r, sans-serif;
+    font-weight: 500;
   }
 }
 
@@ -740,8 +848,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
   padding: 0 5px;
+}
+.third-showcase-title h1 {
+  font-weight: 700;
 }
 .thirdC-swiper-slide {
   width: 280px;
@@ -751,24 +862,27 @@
   max-width: 700px;
 }
 .thirdC-swiper-slide-content {
-  font-family: "AktivGrotesk-r", sans-serif;
-  padding: 10px 10px 10px 0;
+  font-family: AktivGrotesk-r, sans-serif;
+  padding: 20px 10px 10px 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .thirdC-swiper-slide-content h1 {
   font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 .thirdC-swiper-slide-content p {
   font-size: 12px;
   max-width: 300px;
   color: #585757;
+  margin-bottom: 0;
 }
 .thirdC-swiper-slide-content span {
   font-size: 13px;
-  font-family: "AktivGrotesk-r", sans-serif;
-  font-weight: bold;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 400;
 }
 .thirdC-swiper-wrapper {
   min-height: 500px;
@@ -793,7 +907,9 @@
 .view-all-insights-events button a {
   color: #fff;
   text-decoration: none;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .swiper-pagination-bullet {
@@ -894,27 +1010,34 @@
   padding: 20px 10px 10px 5%;
   flex-direction: column;
   gap: 10px;
-  font-family: sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
 }
 .secondC-swiper-slide-content-title {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+.secondC-swiper-slide-content-title h6 {
+  font-size: 11px;
+  font-weight: 700;
+}
 .secondC-swiper-slide-content-title h4 {
   font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .secondC-swiper-slide-content button {
   background: transparent;
   border: 1px solid #000;
-  width: 100px;
-  height: 40px;
+  width: 130px;
+  height: 50px;
 }
 .secondC-swiper-slide-content button a {
   color: #000;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 11px;
+  letter-spacing: 1px;
 }
 .secondC-swiper-slide-content p {
   font-size: 15px;
@@ -930,14 +1053,16 @@
 }
 .secondC-view-all-featured-products button {
   background: #11181f;
-  width: 200px;
+  width: 250px;
   height: 40px;
   border: none;
 }
 .secondC-view-all-featured-products button a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 11px;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .secondC-swiper-pagination-bullet {
@@ -1039,9 +1164,11 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "AktivGrotesk-b", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
   padding: 0 5px;
-  font-weight: bold;
+}
+.aboutPage-slider-title h1 {
+  font-weight: 700;
 }
 .aboutPage-slider-swiper-slide {
   width: 280px;
@@ -1052,11 +1179,11 @@
 }
 .aboutPage-slider-swiper-slide-content {
   font-family: sans-serif;
-  padding: 10px 10px 10px 0;
+  padding: 25px 10px 10px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
 }
 .aboutPage-slider-swiper-slide-content h1 {
   font-size: 20px;
@@ -1090,7 +1217,7 @@
 .aboutPage-viewAll-products button a {
   color: #fff;
   text-decoration: none;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
   font-size: 12px;
 }
 
@@ -1203,13 +1330,14 @@
 .about-application-content {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 40px 10px 40px 10px;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-family: AktivGrotesk-r, sans-serif;
 }
 .about-application-content h3 {
-  font-family: "AktivGrotesk-b", sans-serif;
-  font-size: 20px;
+  font-family: AktivGrotesk-b, sans-serif;
+  font-weight: 700;
+  font-size: 28px;
 }
 .about-application-content p {
   color: #585757;
@@ -1230,8 +1358,8 @@
   width: 50%;
   text-decoration: none;
   color: #11181f;
-  font-weight: 700;
-  font-family: "AktivGrotesk-r", sans-serif;
+  font-weight: 500;
+  font-family: AktivGrotesk-r, sans-serif;
   transition: all 0.2s ease;
 }
 

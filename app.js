@@ -25,21 +25,29 @@ const aboutDropdownLinks = document.querySelectorAll(".about-mobile-links li");
 const desktopContactBtn = document.querySelector(".desktop-nav-contact-us");
 
 telBtn.addEventListener("click", () => {
-  contactPopOut.style.right = "0px";
-  contactPopOut.style.display = "flex";
-  navigation.style.transform = "translateX(-280px)";
-  navigation.style.pointerEvents = "none";
-  navigation.classList.remove("contactPopOutClassMobile");
-  document.body.style.overflow = "hidden";
+  if (window.scrollY == 0) {
+    contactPopOut.style.right = "0px";
+    contactPopOut.style.display = "flex";
+    navigation.style.transform = "translateX(-280px)";
+    navigation.style.pointerEvents = "none";
+    navigation.classList.remove("contactPopOutClassMobile");
+    document.body.style.overflow = "hidden";
+  } else {
+    window.scrollTo(0, 0);
+  }
 });
 
 menu.addEventListener("click", () => {
-  menuPopOut.style.right = "0";
-  menuPopOut.style.display = "flex";
-  navigation.style.transform = "translateX(-280px)";
-  navigation.style.pointerEvents = "none";
-  navigation.classList.remove("contactPopOutClassMobile");
-  document.body.style.overflow = "hidden";
+  if (window.scrollY == 0) {
+    menuPopOut.style.right = "0";
+    menuPopOut.style.display = "flex";
+    navigation.style.transform = "translateX(-280px)";
+    navigation.style.pointerEvents = "none";
+    navigation.classList.remove("contactPopOutClassMobile");
+    document.body.style.overflow = "hidden";
+  } else {
+    window.scrollTo(0, 0);
+  }
 });
 menuCloseBtn.addEventListener("click", () => {
   menuPopOut.style.right = "-280px";
@@ -84,11 +92,15 @@ aboutDropdown.addEventListener("click", () => {
 });
 
 desktopContactBtn.addEventListener("click", () => {
-  contactPopOut.classList.add("contactPopOutClass");
-  contactPopOut.classList.add("contactPopOutClass");
-  navigation.classList.add("navigationDeskClass");
-  navigation.style.pointerEvents = "none";
-  document.body.style.overflow = "hidden";
+  if (window.scrollY == 0) {
+    contactPopOut.classList.add("contactPopOutClass");
+    contactPopOut.classList.add("contactPopOutClass");
+    navigation.classList.add("navigationDeskClass");
+    navigation.style.pointerEvents = "none";
+    document.body.style.overflow = "hidden";
+  } else {
+    window.scrollTo(0, 0);
+  }
 });
 
 // !!!!!!!!!!!!! JAVASCRIPT FOR FIRST SLIDER !!!!!!!!!!!!!!!
