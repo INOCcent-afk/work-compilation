@@ -30,7 +30,7 @@ telBtn.addEventListener("click", () => {
   navigation.style.transform = "translateX(-280px)";
   navigation.style.pointerEvents = "none";
   navigation.classList.remove("contactPopOutClassMobile");
-  document.body.style.maxHeight = "1000px";
+  document.body.style.overflow = "hidden";
 });
 
 menu.addEventListener("click", () => {
@@ -39,12 +39,14 @@ menu.addEventListener("click", () => {
   navigation.style.transform = "translateX(-280px)";
   navigation.style.pointerEvents = "none";
   navigation.classList.remove("contactPopOutClassMobile");
+  document.body.style.overflow = "hidden";
 });
 menuCloseBtn.addEventListener("click", () => {
   menuPopOut.style.right = "-280px";
   menuPopOut.style.display = "none";
   navigation.classList.add("contactPopOutClassMobile");
   navigation.style.pointerEvents = "all";
+  document.body.style.overflow = "auto";
 });
 
 contactCloseBtn.addEventListener("click", () => {
@@ -59,6 +61,7 @@ contactCloseBtn.addEventListener("click", () => {
     navigation.classList.add("contactPopOutClassMobile");
     navigation.style.pointerEvents = "all";
   }
+  document.body.style.overflow = "auto";
 });
 
 applicationDropdown.addEventListener("click", () => {
@@ -85,6 +88,7 @@ desktopContactBtn.addEventListener("click", () => {
   contactPopOut.classList.add("contactPopOutClass");
   navigation.classList.add("navigationDeskClass");
   navigation.style.pointerEvents = "none";
+  document.body.style.overflow = "hidden";
 });
 
 // !!!!!!!!!!!!! JAVASCRIPT FOR FIRST SLIDER !!!!!!!!!!!!!!!

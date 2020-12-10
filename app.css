@@ -87,6 +87,7 @@
   gap: 5px;
   align-items: center;
   cursor: pointer;
+  border-right: 1px solid #e1e1e1;
 }
 .burger {
   width: 30px;
@@ -107,9 +108,11 @@
   top: 0;
   right: -250px;
   flex-direction: column;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   display: none;
   z-index: 999;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .contact-us-closeBtn {
@@ -118,7 +121,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 50px;
+  min-height: 50px;
   align-self: flex-end;
   cursor: pointer;
 }
@@ -219,6 +222,8 @@
   min-height: 100vh;
   display: none;
   z-index: 999;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .menu-closeBtn {
@@ -227,7 +232,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 50px;
+  min-height: 50px;
   align-self: flex-end;
   cursor: pointer;
   border-left: 1px solid #e1e1e1;
@@ -421,6 +426,7 @@
     padding: 0 40px 0 40px;
     cursor: pointer;
     border-left: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
   }
   .desktop-application-dropdown-links {
     display: none;
