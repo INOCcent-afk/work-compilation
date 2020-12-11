@@ -1152,7 +1152,6 @@ p {
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 .aboutPage-slider {
   width: 100%;
   min-height: 600px;
@@ -1380,5 +1379,171 @@ p {
   .about-application-content p {
     padding-left: 10px;
     font-size: 14px;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
+footer {
+  height: 100vh;
+  max-height: 600px;
+  background: #11181f;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+.footer-vector {
+  position: absolute;
+  width: 100vw;
+  max-width: 350px;
+  right: -5%;
+  top: -5%;
+  pointer-events: none;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  text-align: center;
+}
+.footer-link li a {
+  text-decoration: none;
+  color: #969696;
+}
+.footer-link li a:hover {
+  color: #e1e1e1;
+}
+.footer-link li:nth-child(1) a {
+  color: #e1e1e1;
+}
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.footer-contacts-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-contacts-icons img {
+  opacity: 0.6;
+  width: 20px;
+}
+.footer-contacts-icons img:hover {
+  opacity: 1;
+}
+
+.footer-copyright p {
+  color: #969696;
+  font-size: 13px;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.footer-logo {
+  display: flex;
+  gap: 15px;
+}
+.footer-logoImg {
+  width: 50px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background: #8e8e8d;
+  margin: 10px 0 0 0;
+  width: 200px;
+}
+.footer-logo-container p {
+  color: #969696;
+  font-size: 13px;
+}
+.desktop-footer-link {
+  display: none;
+}
+@media (min-width: 576px) {
+  .footer-vector {
+    max-width: 520px;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-vector {
+    max-width: 650px;
+    right: 0;
+    top: 0;
+  }
+  .desktop-footer-link {
+    display: flex;
+  }
+  footer {
+    max-height: 680px;
+  }
+  .footer-links-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    gap: 50px;
+    max-width: 1000px;
+  }
+  .footer-link {
+    text-align: start;
+    width: 143px;
+    gap: 15px;
+  }
+  .footer-link-sublinks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 50px;
+  }
+  .footer-link-sublinks a {
+    color: #e1e1e1;
+    text-decoration: none;
+  }
+  .footer-contacts {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    gap: 40px;
+    max-width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-vector {
+    max-width: 700px;
+  }
+  .footer-links-container {
+    max-width: 1100px;
+  }
+  .footer-contacts {
+    max-width: 1000px;
+  }
+  .footer-link {
+    width: 160px;
   }
 }
