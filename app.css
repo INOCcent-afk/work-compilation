@@ -827,158 +827,6 @@ p {
   }
 }
 
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */ /* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
-
-.third-showcase {
-  width: 100%;
-  min-height: 700px;
-  position: relative;
-  margin-top: 100px;
-}
-.third-showcase-title {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: AktivGrotesk-r, sans-serif;
-  padding: 0 5px;
-}
-.third-showcase-title h1 {
-  font-weight: 700;
-}
-.thirdC-swiper-slide {
-  width: 280px;
-}
-.thirdC-swiper-slide img {
-  width: 100%;
-  max-width: 700px;
-}
-.thirdC-swiper-slide-content {
-  font-family: AktivGrotesk-r, sans-serif;
-  padding: 20px 10px 10px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.thirdC-swiper-slide-content h1 {
-  font-size: 20px;
-  margin-bottom: 0;
-  font-weight: 400;
-}
-.thirdC-swiper-slide-content p {
-  font-size: 12px;
-  max-width: 300px;
-  color: #585757;
-  margin-bottom: 0;
-}
-.thirdC-swiper-slide-content span {
-  font-size: 13px;
-  font-family: AktivGrotesk-r, sans-serif;
-  font-weight: 400;
-}
-.thirdC-swiper-wrapper {
-  min-height: 500px;
-  padding-left: 10px;
-}
-
-.view-all-insights-events {
-  height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.view-all-insights-events button {
-  width: 250px;
-  height: 40px;
-  background: #11181f;
-  border: none;
-}
-
-.view-all-insights-events button a {
-  color: #fff;
-  text-decoration: none;
-  font-family: AktivGrotesk-r, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.swiper-pagination-bullet {
-  background: #000;
-}
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
-
-@media (min-width: 400px) {
-  .thirdC-swiper-wrapper {
-    min-height: 600px;
-  }
-}
-@media (min-width: 800px) {
-  .thirdC-swiper-wrapper {
-    min-height: 600px;
-    padding-left: 10px;
-  }
-}
-
-@media (min-width: 1000px) {
-  .thirdC-swiper-container {
-    max-width: 800px;
-  }
-  .thirdC-swiper-wrapper {
-    min-height: 500px;
-    padding: 0;
-  }
-  .third-showcase {
-    max-width: 1150px;
-    margin: auto;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: flex;
-    color: #000;
-    z-index: 100;
-    outline: none;
-  }
-  .swiper-button-prev {
-    left: 40px;
-  }
-  .swiper-button-next {
-    right: 40px;
-  }
-}
-
-@media (min-width: 1320px) {
-  .thirdC-swiper-container {
-    max-width: 1150px;
-  }
-  .thirdC-swiper-wrapper {
-    min-height: 600px;
-    padding: 0;
-  }
-  .third-showcase {
-    max-width: 1150px;
-    margin: auto;
-  }
-  .swiper-button-prev {
-    left: -80px;
-  }
-  .swiper-button-next {
-    right: -80px;
-  }
-}
-
 /* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR SECOND SLIDER !!!!!!!!!!!!!!!!!! */
@@ -1050,6 +898,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 100px;
 }
 .secondC-view-all-featured-products button {
   background: #11181f;
@@ -1109,6 +958,9 @@ p {
     left: 50%;
     top: 30%;
   }
+  .secondC-view-all-featured-products {
+    margin-bottom: 150px;
+  }
 }
 @media (min-width: 1200px) {
   .second-showcase {
@@ -1140,6 +992,395 @@ p {
     font-size: 11px;
   }
 }
+
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR THIRD SLIDER !!!!!!!!!!!!!!!!!! */
+
+.third-showcase {
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+  margin-top: 100px;
+}
+.third-showcase-title {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: AktivGrotesk-r, sans-serif;
+  padding: 0 5px;
+}
+.third-showcase-title h1 {
+  font-weight: 700;
+}
+.thirdC-swiper-slide {
+  width: 280px;
+}
+.thirdC-swiper-slide img {
+  width: 100%;
+  max-width: 700px;
+}
+.thirdC-swiper-slide-content {
+  font-family: AktivGrotesk-r, sans-serif;
+  padding: 20px 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.thirdC-swiper-slide-content h1 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.thirdC-swiper-slide-content p {
+  font-size: 12px;
+  max-width: 300px;
+  color: #585757;
+  margin-bottom: 0;
+}
+.thirdC-swiper-slide-content span {
+  font-size: 13px;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 400;
+}
+.thirdC-swiper-wrapper {
+  min-height: 500px;
+  padding-left: 10px;
+}
+
+.view-all-insights-events {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.view-all-insights-events button {
+  width: 250px;
+  height: 40px;
+  background: #11181f;
+  border: none;
+}
+
+.view-all-insights-events button a {
+  color: #fff;
+  text-decoration: none;
+  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.swiper-pagination-bullet {
+  background: #000;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .thirdC-swiper-wrapper {
+    min-height: 600px;
+  }
+}
+@media (min-width: 800px) {
+  .thirdC-swiper-wrapper {
+    min-height: 600px;
+    padding-left: 10px;
+  }
+  .view-all-insights-events {
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .thirdC-swiper-container {
+    max-width: 800px;
+  }
+  .thirdC-swiper-wrapper {
+    min-height: 500px;
+    padding: 0;
+  }
+  .third-showcase {
+    max-width: 1150px;
+    margin: auto;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: flex;
+    color: #000;
+    z-index: 100;
+    outline: none;
+  }
+  .swiper-button-prev {
+    left: 40px;
+  }
+  .swiper-button-next {
+    right: 40px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .thirdC-swiper-container {
+    max-width: 1150px;
+  }
+  .thirdC-swiper-wrapper {
+    min-height: 600px;
+    padding: 0;
+  }
+  .third-showcase {
+    max-width: 1150px;
+    margin: auto;
+  }
+  .swiper-button-prev {
+    left: -80px;
+  }
+  .swiper-button-next {
+    right: -80px;
+  }
+}
+
+/* !!!!!!!!!!!!!!!!!! CSS FOR HOMEPAGE BESPOKE !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR HOMEPAGE BESPOKE !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR HOMEPAGE BESPOKE !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR HOMEPAGE BESPOKE !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR HOMEPAGE BESPOKE !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR HOMEPAGE BESPOKE !!!!!!!!!!!!! */
+.bespoke-section-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background: #11181f;
+  min-height: 612px;
+}
+
+.bespoke-section-img {
+  width: 100%;
+  height: 30%;
+}
+.bespoke-section-img img {
+  width: 100%;
+  height: 30%;
+}
+
+.bespoke-section-content {
+  min-height: 389px;
+  width: 100%;
+  padding: 50px 20px;
+  color: #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+.bespoke-section-content h4 {
+  font-size: 26px;
+}
+.bespoke-section-content p {
+  font-size: 15px;
+}
+.bespoke-section-content button {
+  border: 1px solid #e1e1e1;
+  background: transparent;
+  width: 130px;
+  height: 50px;
+  font-size: 13px;
+}
+.bespoke-section-content button a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+.bespoke-line {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #da291c 1.29%,
+    #ff7f32 34.57%,
+    #002b94 83.03%,
+    rgba(17, 24, 31, 0) 99.49%
+  );
+}
+
+@media (min-width: 768px) {
+  .bespoke-section-container {
+    flex-direction: row-reverse;
+    min-height: 586px;
+  }
+
+  .bespoke-section-img {
+    height: 586px;
+  }
+  .bespoke-section-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bespoke-section-content {
+    min-height: 300px;
+    padding: 50px 80px;
+    min-width: 600px;
+    gap: 30px;
+  }
+  .bespoke-section-content h4 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bespoke-section-container {
+    flex-direction: row-reverse;
+    min-height: 586px;
+  }
+
+  .bespoke-section-img {
+    height: 586px;
+  }
+  .bespoke-section-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .bespoke-section-content {
+    min-height: 300px;
+    padding: 50px 90px 50px 200px;
+    min-width: 900px;
+    justify-content: flex-end;
+  }
+  .bespoke-section-content h4 {
+    font-size: 36px;
+  }
+}
+
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!! CSS FOR SUBSCRIBE FORM !!!!!!!!!!!!!!!!!!!!! */
+.homepage-subscribe-form-container {
+  width: 100%;
+  min-height: 558px;
+  display: flex;
+  flex-direction: column;
+  background: #f4f5f6;
+}
+
+.homepage-subscribe-form-img {
+  height: 30%;
+  width: 100%;
+}
+
+.homepage-subscribe-form-img img {
+  width: 100%;
+}
+
+.homepage-subscribe-form {
+  height: 394px;
+  width: 100%;
+  background: #f4f5f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.homepage-subscribe-form h6 {
+  font-size: 20px;
+}
+.homepage-subscribe-form-input {
+  position: relative;
+  width: 100%;
+}
+.homepage-subscribe-form-input input {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #969696;
+  padding-bottom: 20px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.homepage-subscribe-form-input::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: block;
+  background: #11181f;
+  transition: all 0.2s ease;
+  bottom: 0;
+}
+.homepage-subscribe-form-input:hover::after {
+  width: 100%;
+}
+
+.homepage-subscribe-form ::placeholder {
+  font-size: 15px;
+}
+
+.homepage-subscribe-form-input:hover ::placeholder {
+  color: #11181f;
+}
+.homepage-subscribe-form button {
+  border: 1px solid #11181f;
+  width: 100px;
+  height: 50px;
+
+  background: transparent;
+}
+
+@media (min-width: 768px) {
+  .homepage-subscribe-form-container {
+    min-height: 680px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .homepage-subscribe-form-img {
+    height: 680px;
+  }
+
+  .homepage-subscribe-form-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .homepage-subscribe-form {
+    height: 400px;
+    min-width: 680px;
+    max-width: 680px;
+    padding: 0 100px;
+  }
+  .homepage-subscribe-form h6 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage-subscribe-form {
+    min-width: 840px;
+    max-width: 840px;
+    padding: 0 170px;
+  }
+}
+
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
@@ -1372,6 +1613,7 @@ p {
 @media (min-width: 768px) {
   .about-application-content {
     margin: 0;
+    min-height: 350px;
   }
   .about-application-content h3 {
     padding-left: 10px;
@@ -1380,6 +1622,67 @@ p {
     padding-left: 10px;
     font-size: 14px;
   }
+}
+
+/* !!!!!!!!!!! CSS FOR CONTACT-PAGE CONTACTS !!!!!!!!!!!!  */
+/* !!!!!!!!!!! CSS FOR CONTACT-PAGE CONTACTS !!!!!!!!!!!!  */
+/* !!!!!!!!!!! CSS FOR CONTACT-PAGE CONTACTS !!!!!!!!!!!!  */
+/* !!!!!!!!!!! CSS FOR CONTACT-PAGE CONTACTS !!!!!!!!!!!!  */
+/* !!!!!!!!!!! CSS FOR CONTACT-PAGE CONTACTS !!!!!!!!!!!!  */
+/* !!!!!!!!!!! CSS FOR CONTACT-PAGE CONTACTS !!!!!!!!!!!!  */
+
+.contact-page-contacts-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 1200px;
+  margin: auto;
+}
+.contact-page-contact-title h3 {
+  font-family: "AktivGrotesk-b";
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+.contact-page-contact-line {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #da291c 1.29%,
+    #ff7f32 34.57%,
+    #002b94 83.03%,
+    rgba(17, 24, 31, 0) 99.49%
+  );
+}
+.contact-page-contact-address-container {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.contact-page-contact-address {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 250px;
+}
+.contact-page-contact-address h6 {
+  font-size: 20px;
+  color: #11181f;
+}
+.contact-page-contact-address-content p:nth-child(1) {
+  color: #11181f;
+}
+
+.contact-page-contact-address-content p,
+.contact-page-contact-address-link p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #969696;
 }
 
 /* !!!!!!!!!!!!!!!!!!! CSS FOR FOOOTERRR !!!!!!!!!!!!!!!!! */
