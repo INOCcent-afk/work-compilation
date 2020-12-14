@@ -7,6 +7,18 @@
     url("fonts/AktivGroteskCorp-Medium.woff") format("woff"),
     url("fonts/AktivGroteskCorp-Medium.ttf") format("truetype");
 }
+@font-face {
+  font-family: "aktiv-grotesk";
+  src: url("https://use.typekit.net/af/28158e/00000000000000003b9b4066/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/28158e/00000000000000003b9b4066/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/28158e/00000000000000003b9b4066/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
 
 @font-face {
   font-family: "AktivGrotesk-b";
@@ -80,12 +92,24 @@
     url("fonts/AktivGroteskCorp-BoldItalic.woff") format("woff"),
     url("fonts/AktivGroteskCorp-BoldItalic.ttf") format("truetype");
 }
+@font-face {
+  font-family: "aktiv-grotesk-extended";
+  src: url("https://use.typekit.net/af/e10446/00000000000000003b9ad13a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/e10446/00000000000000003b9ad13a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/e10446/00000000000000003b9ad13a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
 }
 h1,
 h2,
@@ -233,7 +257,7 @@ p {
 }
 .australia-title h1,
 .newzealand-title h1 {
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk-extended", sans-serif;
   font-weight: 700 !important;
   font-size: 24px;
 }
@@ -293,7 +317,9 @@ p {
   color: #e1e1e1;
   text-decoration: none;
   font-size: 11px;
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 /* MENU */
@@ -653,7 +679,7 @@ p {
   }
   .australia-title h1,
   .newzealand-title h1 {
-    font-family: AktivGrotesk-r, sans-serif;
+    font-family: "aktiv-grotesk-extended", sans-serif;
     font-weight: 700 !important;
     font-size: 28px;
   }
@@ -715,7 +741,7 @@ p {
 }
 .firstC-swiper-slide-content h3 {
   color: #11181f;
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk-extended", sans-serif;
   font-weight: 700;
 }
 .firstC-swiper-slide-content p {
@@ -876,6 +902,7 @@ p {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
+  font-family: "aktiv-grotesk-extended";
 }
 .secondC-swiper-slide-content button {
   background: transparent;
@@ -905,8 +932,8 @@ p {
 }
 .secondC-view-all-featured-products button {
   background: #11181f;
-  width: 250px;
-  height: 40px;
+  width: 280px;
+  height: 50px;
   border: none;
 }
 .secondC-view-all-featured-products button a {
@@ -914,7 +941,7 @@ p {
   text-decoration: none;
   font-family: AktivGrotesk-r, sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .secondC-swiper-pagination-bullet {
@@ -1023,6 +1050,7 @@ p {
 }
 .third-showcase-title h1 {
   font-weight: 700;
+  font-family: "aktiv-grotesk-extended", sans-serif;
 }
 .thirdC-swiper-slide {
   width: 280px;
@@ -1069,8 +1097,8 @@ p {
 }
 
 .view-all-insights-events button {
-  width: 250px;
-  height: 40px;
+  width: 280px;
+  height: 50px;
   background: #11181f;
   border: none;
 }
@@ -1080,7 +1108,7 @@ p {
   text-decoration: none;
   font-family: AktivGrotesk-r, sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .swiper-pagination-bullet {
@@ -1190,7 +1218,8 @@ p {
 }
 .bespoke-section-content h4 {
   font-size: 26px;
-  font-family: "AktivGrotesk-b", sans-serif;
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
 }
 .bespoke-section-content p {
   font-size: 15px;
@@ -1198,13 +1227,19 @@ p {
 .bespoke-section-content button {
   border: 1px solid #e1e1e1;
   background: transparent;
-  width: 130px;
+  width: 123px;
   height: 50px;
-  font-size: 13px;
+  font-size: 11px;
+  outline: none;
+  line-height: 12px;
 }
+
 .bespoke-section-content button a {
   text-decoration: none;
   color: #e1e1e1;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .bespoke-line {
   height: 1px;
@@ -1305,9 +1340,10 @@ p {
   margin: auto;
 }
 
-.homepage-subscribe-form h6 {
+.homepage-subscribe-form h5 {
   font-size: 20px;
-  font-family: "AktivGrotesk-m";
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 400;
 }
 .homepage-subscribe-form-input {
   position: relative;
@@ -1346,11 +1382,17 @@ p {
 }
 .homepage-subscribe-form button {
   border: 1px solid #11181f;
-  width: 100px;
-  height: 50px;
+  width: 86px;
+  height: 40px;
   background: transparent;
-  font-family: "AktivGrotesk-r";
-  font-weight: 700;
+  font-family: "aktiv-grotesk", sans-serif;
+  outline: none;
+}
+.homepage-subscribe-form button a {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  letter-spacing: 1px;
 }
 
 @media (min-width: 768px) {
@@ -1416,6 +1458,7 @@ p {
 }
 .aboutPage-slider-title h1 {
   font-weight: 700;
+  font-family: "aktiv-grotesk-extended", sans-serif;
 }
 .aboutPage-slider-swiper-slide {
   width: 280px;
@@ -1582,7 +1625,7 @@ p {
   font-family: AktivGrotesk-r, sans-serif;
 }
 .about-application-content h3 {
-  font-family: AktivGrotesk-b, sans-serif;
+  font-family: "aktiv-grotesk-extended", sans-serif;
   font-weight: 700;
   font-size: 28px;
 }
@@ -1648,7 +1691,8 @@ p {
   margin: auto;
 }
 .contact-page-contact-title h3 {
-  font-family: "AktivGrotesk-b";
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
   font-size: 28px;
   padding-bottom: 10px;
 }
