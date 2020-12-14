@@ -1060,7 +1060,7 @@ p {
   max-width: 700px;
 }
 .thirdC-swiper-slide-content {
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   padding: 20px 10px 10px 0;
   display: flex;
   flex-direction: column;
@@ -1072,14 +1072,16 @@ p {
   font-weight: 400;
 }
 .thirdC-swiper-slide-content p {
-  font-size: 12px;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
   max-width: 300px;
   color: #585757;
   margin-bottom: 0;
 }
 .thirdC-swiper-slide-content span {
   font-size: 13px;
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
   font-weight: 400;
 }
 .thirdC-swiper-wrapper {
@@ -1223,6 +1225,9 @@ p {
 }
 .bespoke-section-content p {
   font-size: 15px;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 400;
+  color: #e1e1e1;
 }
 .bespoke-section-content button {
   border: 1px solid #e1e1e1;
@@ -1382,17 +1387,16 @@ p {
 }
 .homepage-subscribe-form button {
   border: 1px solid #11181f;
-  width: 86px;
+  width: 90px;
   height: 40px;
   background: transparent;
   font-family: "aktiv-grotesk", sans-serif;
   outline: none;
-}
-.homepage-subscribe-form button a {
   font-weight: 500;
-  font-size: 11px;
+  font-size: 13px;
   line-height: 12px;
   letter-spacing: 1px;
+  padding: 5px 20px;
 }
 
 @media (min-width: 768px) {
@@ -1416,7 +1420,7 @@ p {
     max-width: 680px;
     padding: 0 100px;
   }
-  .homepage-subscribe-form h6 {
+  .homepage-subscribe-form h5 {
     font-size: 24px;
   }
 }
@@ -1498,8 +1502,8 @@ p {
 }
 
 .aboutPage-viewAll-products button {
-  width: 250px;
-  height: 40px;
+  width: 280px;
+  height: 50px;
   background: #11181f;
   border: none;
 }
@@ -1507,8 +1511,9 @@ p {
 .aboutPage-viewAll-products button a {
   color: #fff;
   text-decoration: none;
-  font-family: AktivGrotesk-r, sans-serif;
-  font-size: 12px;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .swiper-pagination-bullet {
@@ -1620,9 +1625,9 @@ p {
 .about-application-content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 40px 10px 40px 10px;
-  font-family: AktivGrotesk-r, sans-serif;
+  font-family: "aktiv-grotesk", sans-serif;
 }
 .about-application-content h3 {
   font-family: "aktiv-grotesk-extended", sans-serif;
@@ -1632,6 +1637,8 @@ p {
 .about-application-content p {
   color: #585757;
   font-size: 15px;
+  line-height: 22px;
+  font-family: "aktiv-grotesk", sans-serif;
 }
 
 .seeApplication {
@@ -1648,8 +1655,9 @@ p {
   width: 50%;
   text-decoration: none;
   color: #11181f;
-  font-weight: 500;
-  font-family: AktivGrotesk-r, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "aktiv-grotesk", sans-serif;
   transition: all 0.2s ease;
 }
 
