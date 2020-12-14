@@ -126,7 +126,9 @@ p {
   align-items: center;
   gap: 15px;
 }
-
+.navlogo img {
+  width: 130px;
+}
 .vector-letters {
   height: 10px;
   color: #fff;
@@ -150,6 +152,7 @@ p {
   width: 70px;
   cursor: pointer;
 }
+
 .menu {
   width: 70px;
   height: 70px;
@@ -164,7 +167,7 @@ p {
 .burger {
   width: 30px;
   height: 2px;
-  background-color: #fff;
+  background-color: #e1e1e1;
   border-radius: 2px;
 }
 
@@ -471,10 +474,10 @@ p {
     gap: 20px;
     width: 20%;
   }
-
-  .navlogoImg {
-    width: 60px;
+  .navlogo img {
+    width: unset;
   }
+
   .vector-letters {
     height: unset;
     color: #fff;
@@ -907,11 +910,11 @@ p {
   border: none;
 }
 .secondC-view-all-featured-products button a {
-  color: #ffffff;
+  color: #e1e1e1;
   text-decoration: none;
   font-family: AktivGrotesk-r, sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .secondC-swiper-pagination-bullet {
@@ -1073,11 +1076,11 @@ p {
 }
 
 .view-all-insights-events button a {
-  color: #fff;
+  color: #e1e1e1;
   text-decoration: none;
   font-family: AktivGrotesk-r, sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .swiper-pagination-bullet {
@@ -1187,6 +1190,7 @@ p {
 }
 .bespoke-section-content h4 {
   font-size: 26px;
+  font-family: "AktivGrotesk-b", sans-serif;
 }
 .bespoke-section-content p {
   font-size: 15px;
@@ -1255,7 +1259,7 @@ p {
 
   .bespoke-section-content {
     min-height: 300px;
-    padding: 50px 90px 50px 200px;
+    padding: 50px 120px 50px 280px;
     min-width: 900px;
     justify-content: flex-end;
   }
@@ -1303,6 +1307,7 @@ p {
 
 .homepage-subscribe-form h6 {
   font-size: 20px;
+  font-family: "AktivGrotesk-m";
 }
 .homepage-subscribe-form-input {
   position: relative;
@@ -1343,18 +1348,19 @@ p {
   border: 1px solid #11181f;
   width: 100px;
   height: 50px;
-
   background: transparent;
+  font-family: "AktivGrotesk-r";
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
   .homepage-subscribe-form-container {
-    min-height: 680px;
+    min-height: 500px;
     flex-direction: row;
     align-items: center;
   }
   .homepage-subscribe-form-img {
-    height: 680px;
+    height: 500px;
   }
 
   .homepage-subscribe-form-img img {
@@ -1658,7 +1664,7 @@ p {
   );
 }
 .contact-page-contact-address-container {
-  padding-top: 20px;
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -1765,9 +1771,7 @@ footer {
   display: flex;
   gap: 15px;
 }
-.footer-logoImg {
-  width: 50px;
-}
+
 .line {
   height: 1px;
   width: 100%;
