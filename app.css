@@ -1456,6 +1456,154 @@ p {
   }
 }
 
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!! */
+
+.about-page-video-section-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background: #11181f;
+  min-height: 610px;
+}
+.about-page-video-section-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-page-video-section-img {
+  width: 100%;
+  height: 500px;
+  pointer-events: none;
+}
+.about-page-video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 2s ease;
+}
+.about-page-video-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  cursor: pointer;
+  pointer-events: all;
+  transition: opacity 0.5s ease;
+  opacity: 0.6;
+}
+.about-page-video-play-icon:hover {
+  opacity: 1;
+}
+
+.about-page-video-section-content {
+  min-height: 320px;
+  width: 100%;
+  padding: 50px 20px;
+  color: #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+.about-page-video-section-content h4 {
+  font-size: 28px;
+  font-family: "aktiv-grotesk-extended", sans-serif;
+  font-weight: 700;
+}
+.about-page-video-section-content p {
+  font-size: 15px;
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  color: #e1e1e1;
+}
+.about-page-video-line {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #da291c 1.29%,
+    #ff7f32 34.57%,
+    #002b94 83.03%,
+    rgba(17, 24, 31, 0) 99.49%
+  );
+}
+
+@media (min-width: 992px) {
+  .about-page-video-section-container {
+    flex-direction: row-reverse;
+
+    min-height: 586px;
+  }
+
+  .about-page-video-section-img {
+    height: 586px;
+  }
+  .about-page-video-section-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-page-video-section-content {
+    min-height: 300px;
+    padding: 50px 20px;
+    min-width: 496px;
+    gap: 30px;
+  }
+  .about-page-video-section-content h4 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-page-video-section-container {
+    flex-direction: row-reverse;
+    min-height: 586px;
+  }
+
+  .about-page-video-section-img {
+    height: 586px;
+  }
+  .about-page-video-section-img img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-page-video-section-content {
+    min-height: 300px;
+    padding: 50px 80px 50px 80px;
+    min-width: 600px;
+    justify-content: flex-end;
+  }
+  .about-page-video-section-content h4 {
+    font-size: 36px;
+  }
+  .about-page-video-section-content p {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1500px) {
+  .about-page-video-section-content {
+    padding: 50px 200px 50px 200px;
+    min-width: 900px;
+  }
+}
+
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!! CSS FOR ABOUT PAGE SLIDER !!!!!!!!!!!!!!!!!! */

@@ -242,3 +242,26 @@ var myAboutPageSwiper = new Swiper(".aboutPage-slider-swiper-container", {
     },
   },
 });
+
+//  !!!!!!!!!!!!!!! JS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!!!!!!!!!!!!!!
+//  !!!!!!!!!!!!!!! JS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!!!!!!!!!!!!!!
+//  !!!!!!!!!!!!!!! JS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!!!!!!!!!!!!!!
+//  !!!!!!!!!!!!!!! JS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!!!!!!!!!!!!!!
+//  !!!!!!!!!!!!!!! JS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!!!!!!!!!!!!!!
+//  !!!!!!!!!!!!!!! JS FOR ABOUT PAGE VIDEO !!!!!!!!!!!!!!!!!!!!!!!!!
+const aboutPageVideoSectionContainer = document.querySelector(
+  ".about-page-video-section-container"
+);
+const aboutPagePlayIcon = document.querySelector(".about-page-video-play-icon");
+const aboutPageVideoOverlay = document.querySelector(
+  ".about-page-video-overlay"
+);
+const aboutPageVideo = document.querySelector(".about-page-video-section-img");
+
+aboutPagePlayIcon.addEventListener("click", () => {
+  aboutPageVideoOverlay.style.opacity = "0";
+  aboutPagePlayIcon.style.opacity = "0";
+  aboutPagePlayIcon.pointerEvents = "none";
+  aboutPageVideo.src += "?autoplay=1";
+  aboutPageVideo.style.pointerEvents = "all";
+});
